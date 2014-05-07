@@ -1,0 +1,21 @@
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+@-moz-keyframes rotation {
+    from {-moz-transform: rotate(0deg);}
+    to   {-moz-transform: rotate(359deg);}
+}
+#loadingContainer{position:absolute; top: 50%; left: 50%; z-index: 100; overflow: hidden; text-align:center; margin-left: -145px; margin-top: -145px;}
+	#imgLoading{
+		width: 290px;
+		-webkit-animation: rotation 2s infinite linear;
+		-moz-animation: rotation 2s infinite linear;
+	}
+	
+#imgTop{ border: 1px solid #000; width:100%; height:100%; }
+#headerTitle{ width:100%;height:44px;background:url(../img/top.png);text-align:center;color:#FFF;font-size:25px; }
+#imageList{ padding-top: 30px;border-left:1px solid #AAA;border-right:1px solid #AAA;background:#F2F2F2;display:none; }
+#imgTopArea{ background:#1D1D1D;display:none; padding-top: 50px; }
+#profileInfo{ border:1px solid #AAA;background:#FFF;display:none;height:70px;font-size:50px;position:relative; }
+#profilePhoto{ border:3px solid #FFF; border-radius:2px !important;position:absolute; top:-60px; left:100px;box-shadow: 0px 0px 10px #777; }
