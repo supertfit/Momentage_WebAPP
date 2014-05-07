@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="en" id="ie8" class="lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]><html lang="en" id="ie9" class="gt-ie8 lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+    <title>Momentage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="" -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/portfolio-v1.css">
+
+
+
+
+
+<link rel="shortcut icon" href="favicon.ico">
+    
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add fancyBox - button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=2.1.5" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=2.1.5"></script>
+
+	<!-- Add fancyBox - thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=2.1.5" />
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=2.1.5"></script>
+
+	<!-- Add fancyBox - media helper (this is optional) -->
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.0"></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body style="background:#DDD;">
+<div style="width:100%;height:44px;background:url(img/top.png);text-align:center;color:#FFF;font-size:25px;">Momentage</div>
+<div id="loadingContainer" style="display:none;">
+	<img id="imgLoading" src="img/loading.png"/>
+</div>
+<div id="imgTopArea" style="background:#1D1D1D;display:none; padding-top: 50px;">
+	<div class="container portfolio-4-columns">
+		
+			<div style="width:20%;float:left;">
+				<img src="" style="width:100%;height:100%;" id="imgTop">
+				<img src="" style="width:100%;height:100%;" id="imgTop">
+			</div>
+			<div style="width:40%;float:left;">
+				<img src="" style="width:100%;height:100%;" id="imgTop">
+			</div>
+			<div style="width:20%;float:left;">
+				<img src="" style="width:100%;height:100%;" id="imgTop">
+				<img src="" style="width:100%;height:100%;" id="imgTop">
+			</div>
+			<div style="width:20%;float:left;">
+				<img src="" style="width:100%;height:100%;" id="imgTop">
+				<img src="" style="width:100%;height:100%;" id="imgTop">
+			</div>		
+			
+			<div style="clear:both;"></div>
+		
+	</div>
+</div>
+<div class="container portfolio-4-columns" id="profileInfo" style="border:1px solid #AAA;background:#FFF;display:none;height:70px;font-size:50px;position:relative;">
+	<img src="img/04.png" style="border:3px solid #FFF; border-radius:2px !important;position:absolute; top:-60px; left:100px;box-shadow: 0px 0px 10px #777;" />
+	<span style="padding-left:220px;">Justin Bowen</span>
+</div>
+<div class="container portfolio-4-columns" id="imageList" style="padding-top: 30px;border-left:1px solid #AAA;border-right:1px solid #AAA;background:#F2F2F2;display:none;">
+
+</div>
+        <div class="col-md-2 col-sm-6" id="cloneImageItem" style="display:none;">
+            <div class="view view-tenth">
+            	<a class="fancybox" rel="gallery1" href="bigImage" title="title" id="itemImgA">
+                	<img class="img-responsive" src="" alt="" id="itemImg"/>
+                </a>
+                <div class="mask">
+                    <h3 style="margin-top:30px;" id="itemTitle"></h3>
+                    <a class="info" onclick="onPreview(this)" style="cursor: pointer;">Preview</a><br/>
+                    <a target="_blank" href="" class="info" id="itemDetail">Detail</a>
+                </div>
+                <div style="color:#AAA;background:#FFF;">
+                	<span><i class="icon-heart"></i> <span id="itemLikesCnt"></span></span>&nbsp;&nbsp;&nbsp;
+                	<span><i class=" icon-comment"></i> <span id="itemCommentsCnt"></span></span>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

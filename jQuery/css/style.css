@@ -1,0 +1,16 @@
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+@-moz-keyframes rotation {
+    from {-moz-transform: rotate(0deg);}
+    to   {-moz-transform: rotate(359deg);}
+}
+#loadingContainer{position:absolute; top: 50%; left: 50%; z-index: 100; overflow: hidden; text-align:center; margin-left: -145px; margin-top: -145px;}
+	#imgLoading{
+		width: 290px;
+		-webkit-animation: rotation 2s infinite linear;
+		-moz-animation: rotation 2s infinite linear;
+	}
+	
+#imgTop{ border: 1px solid #000; }	
