@@ -33,41 +33,6 @@ $(document).ready( function(){
         	});
 	    }
 	});
-	return;
-	$.ajax({
-        url: "async-getFeedData.php",
-        dataType : "json",
-        type : "POST",
-        success : function(data){
-            if(data.result == "success"){
-            	for( i = 0; i < data.resultList.length; i ++ ){
-            		var objClone = $("#cloneImageItem").clone();
-            		$(objClone).show();
-            		$(objClone).attr("id","imageItem");
-            		$(objClone).find("#itemImg").attr("src", data.resultList[i].smallImage);
-            		$(objClone).find("#itemTitle").text( data.resultList[i].title );
-            		$(objClone).find("#itemLikesCnt").text( data.resultList[i].likesCnt );
-            		$(objClone).find("#itemCommentsCnt").text( data.resultList[i].commentsCnt );
-            		$(objClone).find("#itemImgA").attr("href", data.resultList[i].largeImage);
-            		$(objClone).find("#itemImgA").attr("title", data.resultList[i].description);
-            		$(objClone).find("#itemDetail").attr("href", data.resultList[i].url);
-            		
-            		$("#imageList").append( objClone );
-            		$("#imgTopArea").find("img#imgTop").eq(i).attr("src", data.resultList[i].smallImage );
-            	}
-            	$("#loadingContainer").fadeOut();
-            	$("#imageList").show();
-            	$("#profileInfo").show();
-            	
-            	$("#imgTopArea").fadeIn();
-            	
-            	$(".fancybox").fancybox({
-            		openEffect	: 'none',
-            		closeEffect	: 'none'
-            	});
-            }
-        }
-    });	
 });
 
 function onPreview( obj ){
